@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Yatharth Tour & Travels – Explore Hidden Himachal like never before. Maraog, Churdhar Trek, camping, trekking, village tourism, and custom Himalayan experiences from local experts in Chaupal, Shimla HP.">
+<meta name="keywords" content="Yatharth Tour Travels, Hidden Himachal, Maraog Village, Churdhar Trek, Shimla tour packages, Himachal trekking, village tourism, camping Himachal, offbeat Himachal, Chaupal tourism">
+<meta name="author" content="Yatharth Tour & Travels">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.yatharthtourtravels.com/">
+<meta property="og:title" content="Yatharth Tour & Travels | Explore Hidden Himachal">
+<meta property="og:description" content="Discover Maraog, Churdhar, hidden villages & untouched Himalayan landscapes with local experts. Custom tours, trekking, camping & village experiences.">
+<meta property="og:url" content="https://www.yatharthtourtravels.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>Yatharth Tour & Travels | Explore Hidden Himachal Like Never Before</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"TravelAgency",
+  "name":"Yatharth Tour & Travels",
+  "description":"Local Himalayan travel experts offering hidden Himachal tours, trekking, camping and village experiences.",
+  "url":"https://www.yatharthtourtravels.com",
+  "telephone":"+918894470900",
+  "email":"info@yatharthtourtravels.com",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Maraog, Chaupal",
+    "addressLocality":"Shimla",
+    "addressRegion":"Himachal Pradesh",
+    "postalCode":"171211",
+    "addressCountry":"IN"
+  }
+}
+</script>
+
+<style>
+/* ============================
+   DESIGN TOKENS
+   ============================ */
+:root {
+  /* Forest-mountain palette */
+  --green-deep:    #1a3a2a;
+  --green-mid:     #2d6a4f;
+  --green-bright:  #40916c;
+  --green-light:   #74c69d;
+  --green-pale:    #d8f3dc;
+  --blue-mtn:      #1b4965;
+  --blue-sky:      #3a86b4;
+  --blue-mist:     #caf0f8;
+  --orange-sun:    #e76f51;
+  --orange-warm:   #f4a261;
+  --cream:         #faf9f6;
+  --white:         #ffffff;
+  --charcoal:      #1c1c1e;
+  --slate:         #3d3d3d;
+  --muted:         #6b7280;
+  --border:        #e5e7eb;
+
+  /* Semantic */
+  --bg:            var(--cream);
+  --bg-card:       var(--white);
+  --text-primary:  var(--charcoal);
+  --text-secondary:var(--slate);
+  --text-muted:    var(--muted);
+  --nav-bg:        rgba(250,249,246,0.92);
+  --accent:        var(--green-mid);
+  --accent-hover:  var(--green-deep);
+  --cta:           var(--orange-sun);
+  --shadow-sm:     0 2px 12px rgba(0,0,0,0.06);
+  --shadow-md:     0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg:     0 20px 60px rgba(0,0,0,0.14);
+  --radius-sm:     12px;
+  --radius-md:     20px;
+  --radius-lg:     32px;
+  --radius-xl:     48px;
+  --transition:    0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+[data-theme="dark"] {
+  --bg:            #0e1a14;
+  --bg-card:       #162219;
+  --text-primary:  #f0f4f1;
+  --text-secondary:#b8c9be;
+  --text-muted:    #7a9484;
+  --nav-bg:        rgba(14,26,20,0.94);
+  --border:        #243c2d;
+  --shadow-sm:     0 2px 12px rgba(0,0,0,0.3);
+  --shadow-md:     0 8px 32px rgba(0,0,0,0.4);
+}
+
+/* ============================
+   RESET & BASE
+   ============================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{
+  font-family:'Manrope',sans-serif;
+  background:var(--bg);
+  color:var(--text-primary);
+  line-height:1.7;
+  overflow-x:hidden;
+  transition:background var(--transition), color var(--transition);
+}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+
+/* Loader */
+#loader{
+  position:fixed;inset:0;
+  background:var(--green-deep);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  z-index:9999;
+  transition:opacity 0.6s ease, visibility 0.6s ease;
+}
+#loader.hidden{opacity:0;visibility:hidden;}
+.loader-logo{
+  font-family:'Playfair Display',serif;
+  color:#fff;font-size:2.4rem;font-weight:900;letter-spacing:-1px;
+  margin-bottom:32px;
+}
+.loader-logo span{color:var(--orange-sun);}
+.loader-track{
+  width:200px;height:3px;background:rgba(255,255,255,0.15);border-radius:10px;overflow:hidden;
+}
+.loader-bar{
+  height:100%;width:0;background:linear-gradient(90deg,var(--green-light),var(--orange-sun));
+  border-radius:10px;animation:loadBar 1.8s ease forwards;
+}
+@keyframes loadBar{to{width:100%;}}
+
+/* ============================
+   LAYOUT
+   ============================ */
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+.section{padding:96px 0;}
+.section-eyebrow{
+  display:inline-block;
+  font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--green-bright);background:var(--green-pale);
+  padding:6px 16px;border-radius:40px;margin-bottom:16px;
+}
+[data-theme="dark"] .section-eyebrow{background:rgba(64,145,108,0.2);}
+.section-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,4vw,3.2rem);
+  font-weight:900;line-height:1.2;
+  color:var(--text-primary);
+  margin-bottom:16px;
+}
+.section-sub{
+  font-size:1.1rem;color:var(--text-muted);
+  max-width:600px;margin-bottom:56px;
+}
+.section-head{text-align:center;}
+.section-head .section-sub{margin-left:auto;margin-right:auto;}
+
+/* ============================
+   NAVIGATION
+   ============================ */
+.nav{
+  position:fixed;top:0;width:100%;z-index:1000;
+  background:var(--nav-bg);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid transparent;
+  transition:all var(--transition);
+}
+.nav.scrolled{border-bottom-color:var(--border);box-shadow:var(--shadow-sm);}
+.nav-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  height:72px;
+}
+.nav-logo{
+  font-family:'Playfair Display',serif;
+  font-size:1.5rem;font-weight:900;
+  color:var(--green-deep);
+  letter-spacing:-0.5px;
+}
+[data-theme="dark"] .nav-logo{color:var(--green-light);}
+.nav-logo span{color:var(--orange-sun);}
+.nav-menu{display:flex;align-items:center;gap:8px;}
+.nav-link{
+  font-size:0.9rem;font-weight:600;
+  color:var(--text-secondary);
+  padding:8px 14px;border-radius:10px;
+  transition:all var(--transition);
+}
+.nav-link:hover,.nav-link.active{color:var(--green-mid);background:var(--green-pale);}
+[data-theme="dark"] .nav-link:hover,[data-theme="dark"] .nav-link.active{background:rgba(64,145,108,0.15);}
+.nav-actions{display:flex;align-items:center;gap:12px;}
+.btn-call{
+  display:flex;align-items:center;gap:8px;
+  font-size:0.85rem;font-weight:700;
+  color:var(--green-mid);
+  border:2px solid var(--green-pale);
+  padding:8px 16px;border-radius:40px;
+  transition:all var(--transition);
+}
+.btn-call:hover{background:var(--green-mid);color:#fff;border-color:var(--green-mid);}
+.theme-toggle{
+  width:40px;height:40px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;background:var(--green-pale);
+  color:var(--green-mid);font-size:1.2rem;
+  transition:all var(--transition);
+}
+[data-theme="dark"] .theme-toggle{background:rgba(64,145,108,0.2);}
+.theme-toggle:hover{background:var(--green-mid);color:#fff;}
+.hamburger{
+  display:none;
+  flex-direction:column;gap:5px;
+  width:36px;height:36px;align-items:center;justify-content:center;
+}
+.hamburger span{
+  display:block;width:22px;height:2px;
+  background:var(--text-primary);border-radius:2px;
+  transition:all var(--transition);
+}
+
+/* Mobile nav */
+.mobile-nav{
+  position:fixed;inset:0;z-index:999;
+  background:var(--bg-card);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  transform:translateX(100%);
+  transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-nav.open{transform:translateX(0);}
+.mobile-nav .nav-link{font-size:1.4rem;padding:16px 32px;}
+.mobile-nav-close{
+  position:absolute;top:24px;right:24px;
+  font-size:2rem;color:var(--text-primary);
+}
+.mobile-nav-actions{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:24px;}
+
+/* ============================
+   HERO
+   ============================ */
+.hero{
+  min-height:100svh;position:relative;
+  display:flex;align-items:flex-end;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to right, rgba(14,26,20,0.85) 0%, rgba(14,26,20,0.4) 60%, transparent 100%),
+    linear-gradient(to top, rgba(14,26,20,0.7) 0%, transparent 40%),
+    url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1800&auto=format&q=80') center/cover no-repeat;
+}
+.hero-particles{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(64,145,108,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(231,111,81,0.1) 0%, transparent 50%);
+}
+.hero-content{
+  position:relative;z-index:2;
+  padding:140px 0 100px;
+  max-width:680px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.2);
+  color:#fff;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+  padding:8px 20px;border-radius:40px;
+  margin-bottom:28px;
+}
+.hero-badge::before{content:'';display:block;width:8px;height:8px;background:var(--orange-sun);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.6rem,6vw,5rem);
+  font-weight:900;line-height:1.12;
+  color:#fff;margin-bottom:24px;
+}
+.hero h1 em{font-style:italic;color:var(--orange-warm);}
+.hero-sub{
+  font-size:clamp(1rem,2vw,1.15rem);
+  color:rgba(255,255,255,0.82);
+  margin-bottom:40px;
+  max-width:540px;line-height:1.8;
+}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px;}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--orange-sun);color:#fff;
+  font-weight:700;font-size:0.95rem;
+  padding:16px 32px;border-radius:50px;
+  transition:all var(--transition);
+  box-shadow:0 8px 24px rgba(231,111,81,0.4);
+}
+.btn-primary:hover{background:#d4582f;transform:translateY(-2px);box-shadow:0 12px 32px rgba(231,111,81,0.5);}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:10px;
+  border:2px solid rgba(255,255,255,0.5);color:#fff;
+  font-weight:700;font-size:0.95rem;
+  padding:14px 32px;border-radius:50px;
+  backdrop-filter:blur(8px);
+  background:rgba(255,255,255,0.08);
+  transition:all var(--transition);
+}
+.btn-outline:hover{background:rgba(255,255,255,0.18);border-color:#fff;}
+.hero-trust{display:flex;flex-wrap:wrap;gap:12px;}
+.trust-pill{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.15);
+  color:rgba(255,255,255,0.9);font-size:0.78rem;font-weight:600;
+  padding:7px 14px;border-radius:40px;
+}
+.trust-pill svg{width:14px;height:14px;fill:var(--green-light);}
+.hero-scroll{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:rgba(255,255,255,0.5);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;
+  z-index:2;
+}
+.scroll-dot{
+  width:28px;height:44px;border:2px solid rgba(255,255,255,0.3);
+  border-radius:20px;display:flex;align-items:flex-start;justify-content:center;
+  padding-top:8px;
+}
+.scroll-dot::after{
+  content:'';width:4px;height:8px;background:#fff;border-radius:2px;
+  animation:scrollAnim 1.8s ease infinite;
+}
+@keyframes scrollAnim{0%{transform:translateY(0);opacity:1;}100%{transform:translateY(14px);opacity:0;}}
+
+/* ============================
+   ABOUT MARAOG
+   ============================ */
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;
+  align-items:center;
+}
+.about-img-block{position:relative;}
+.about-img-main{
+  border-radius:var(--radius-lg);
+  overflow:hidden;aspect-ratio:4/5;
+  box-shadow:var(--shadow-lg);
+}
+.about-img-main img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;}
+.about-img-main:hover img{transform:scale(1.04);}
+.about-img-float{
+  position:absolute;
+  bottom:-32px;right:-32px;
+  width:180px;border-radius:var(--radius-md);
+  overflow:hidden;border:4px solid var(--bg);
+  box-shadow:var(--shadow-md);
+  aspect-ratio:1;
+}
+.about-img-float img{width:100%;height:100%;object-fit:cover;}
+.about-stat-badge{
+  position:absolute;top:32px;right:-24px;
+  background:var(--orange-sun);color:#fff;
+  border-radius:var(--radius-md);
+  padding:20px 24px;
+  box-shadow:var(--shadow-md);
+  text-align:center;
+}
+.about-stat-badge strong{display:block;font-size:2rem;font-weight:900;line-height:1;}
+.about-stat-badge span{font-size:0.75rem;font-weight:600;opacity:0.9;}
+.about-points{display:flex;flex-direction:column;gap:16px;margin-top:32px;}
+.about-point{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:16px 20px;background:var(--bg-card);
+  border-radius:var(--radius-sm);border:1px solid var(--border);
+  transition:all var(--transition);
+}
+.about-point:hover{border-color:var(--green-light);transform:translateX(6px);}
+.point-icon{
+  width:40px;height:40px;flex-shrink:0;
+  background:var(--green-pale);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;
+}
+[data-theme="dark"] .point-icon{background:rgba(64,145,108,0.2);}
+
+/* ============================
+   WHY VISIT — FEATURE CARDS
+   ============================ */
+.features-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.feature-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:32px 28px;
+  transition:all var(--transition);
+  cursor:default;
+  position:relative;overflow:hidden;
+}
+.feature-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--green-pale) 0%,transparent 60%);
+  opacity:0;transition:opacity var(--transition);
+}
+[data-theme="dark"] .feature-card::before{background:linear-gradient(135deg,rgba(64,145,108,0.15) 0%,transparent 60%);}
+.feature-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:var(--green-light);}
+.feature-card:hover::before{opacity:1;}
+.fc-icon{
+  width:56px;height:56px;
+  background:linear-gradient(135deg,var(--green-mid),var(--green-bright));
+  border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;margin-bottom:20px;
+  color:#fff;box-shadow:0 4px 16px rgba(45,106,79,0.3);
+}
+.fc-title{font-size:1.05rem;font-weight:700;margin-bottom:10px;color:var(--text-primary);position:relative;}
+.fc-desc{font-size:0.9rem;color:var(--text-muted);line-height:1.7;position:relative;}
+
+/* ============================
+   ACTIVITIES
+   ============================ */
+.activities-section{background:var(--green-deep);position:relative;overflow:hidden;}
+.activities-section::before{
+  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background:
+    radial-gradient(circle at 0% 50%, rgba(64,145,108,0.3) 0%, transparent 50%),
+    radial-gradient(circle at 100% 50%, rgba(231,111,81,0.15) 0%, transparent 50%);
+}
+.activities-section .section-title{color:#fff;}
+.activities-section .section-sub{color:rgba(255,255,255,0.65);}
+.activities-section .section-eyebrow{background:rgba(64,145,108,0.3);color:var(--green-light);}
+.activities-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+.activity-card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:var(--radius-md);
+  padding:28px 20px;
+  text-align:center;
+  transition:all var(--transition);
+  cursor:default;
+}
+.activity-card:hover{
+  background:rgba(255,255,255,0.12);
+  transform:translateY(-6px);
+  border-color:rgba(255,255,255,0.25);
+}
+.ac-icon{font-size:2.4rem;margin-bottom:14px;display:block;}
+.ac-name{font-size:0.9rem;font-weight:700;color:#fff;}
+
+/* ============================
+   HIDDEN HIMACHAL
+   ============================ */
+.hidden-grid{
+  display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;
+}
+.hidden-map{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius-lg);overflow:hidden;
+  aspect-ratio:4/5;position:relative;
+}
+.map-placeholder{
+  width:100%;height:100%;
+  background:linear-gradient(135deg,var(--green-deep) 0%,var(--blue-mtn) 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:40px;text-align:center;
+}
+.map-pin{font-size:3rem;margin-bottom:16px;}
+.map-placeholder h3{color:#fff;font-size:1.4rem;font-family:'Playfair Display',serif;margin-bottom:8px;}
+.map-placeholder p{color:rgba(255,255,255,0.7);font-size:0.9rem;}
+.destinations-list{display:flex;flex-direction:column;gap:16px;margin-top:32px;}
+.dest-item{
+  display:flex;align-items:center;gap:16px;
+  padding:18px 22px;background:var(--bg-card);
+  border:1px solid var(--border);border-radius:var(--radius-sm);
+  transition:all var(--transition);
+}
+.dest-item:hover{border-color:var(--green-mid);background:var(--green-pale);transform:translateX(6px);}
+[data-theme="dark"] .dest-item:hover{background:rgba(64,145,108,0.12);}
+.dest-dot{
+  width:12px;height:12px;border-radius:50%;
+  background:var(--green-bright);flex-shrink:0;
+}
+.dest-name{font-weight:700;font-size:0.95rem;color:var(--text-primary);}
+.dest-desc{font-size:0.82rem;color:var(--text-muted);}
+
+/* ============================
+   WHO CAN TRAVEL
+   ============================ */
+.travelers-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+}
+.traveler-card{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius-md);padding:32px 20px;
+  text-align:center;transition:all var(--transition);
+}
+.traveler-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--orange-sun);}
+.tc-emoji{font-size:2.8rem;margin-bottom:14px;display:block;}
+.tc-name{font-weight:700;font-size:1rem;color:var(--text-primary);margin-bottom:6px;}
+.tc-desc{font-size:0.82rem;color:var(--text-muted);}
+
+/* ============================
+   PACKAGES
+   ============================ */
+.packages-section{background:var(--green-pale);}
+[data-theme="dark"] .packages-section{background:rgba(64,145,108,0.06);}
+.packages-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
+}
+.pkg-card{
+  background:var(--bg-card);border-radius:var(--radius-md);
+  overflow:hidden;border:1px solid var(--border);
+  transition:all var(--transition);
+  display:flex;flex-direction:column;
+}
+.pkg-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-lg);}
+.pkg-img{height:200px;position:relative;overflow:hidden;}
+.pkg-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;}
+.pkg-card:hover .pkg-img img{transform:scale(1.08);}
+.pkg-badge{
+  position:absolute;top:16px;left:16px;
+  background:var(--orange-sun);color:#fff;
+  font-size:0.75rem;font-weight:700;letter-spacing:0.05em;
+  padding:5px 12px;border-radius:40px;
+}
+.pkg-body{padding:24px;flex:1;display:flex;flex-direction:column;}
+.pkg-title{font-size:1.15rem;font-weight:800;margin-bottom:8px;color:var(--text-primary);}
+.pkg-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
+.pkg-tag{
+  font-size:0.78rem;font-weight:600;color:var(--green-mid);
+  background:var(--green-pale);padding:4px 12px;border-radius:40px;
+}
+[data-theme="dark"] .pkg-tag{background:rgba(64,145,108,0.2);}
+.pkg-highlights{margin-bottom:20px;}
+.pkg-highlights li{
+  font-size:0.88rem;color:var(--text-muted);
+  padding:5px 0;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:8px;
+}
+.pkg-highlights li::before{content:'✓';color:var(--green-bright);font-weight:700;}
+.pkg-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;}
+.pkg-ideal{font-size:0.8rem;color:var(--text-muted);}
+.btn-book{
+  background:var(--green-mid);color:#fff;
+  font-weight:700;font-size:0.88rem;
+  padding:10px 22px;border-radius:40px;
+  transition:all var(--transition);
+}
+.btn-book:hover{background:var(--green-deep);transform:translateY(-1px);}
+
+/* ============================
+   GALLERY
+   ============================ */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:auto;
+  gap:16px;
+}
+.gallery-item{
+  border-radius:var(--radius-sm);overflow:hidden;
+  position:relative;aspect-ratio:1;cursor:pointer;
+}
+.gallery-item:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto;}
+.gallery-item:nth-child(5){grid-column:span 2;}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;}
+.gallery-item:hover img{transform:scale(1.06);}
+.gallery-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(14,26,20,0.7) 0%,transparent 50%);
+  opacity:0;transition:opacity var(--transition);
+  display:flex;align-items:flex-end;padding:20px;
+}
+.gallery-item:hover .gallery-overlay{opacity:1;}
+.gallery-label{color:#fff;font-weight:700;font-size:0.9rem;}
+
+/* ============================
+   TESTIMONIALS
+   ============================ */
+.testimonials-section{background:var(--green-deep);}
+.testimonials-section .section-title{color:#fff;}
+.testimonials-section .section-eyebrow{background:rgba(64,145,108,0.3);color:var(--green-light);}
+.testimonials-track{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+}
+.testi-card{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:var(--radius-md);padding:32px;
+  transition:all var(--transition);
+}
+.testi-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-4px);}
+.testi-stars{color:var(--orange-warm);margin-bottom:16px;font-size:1.1rem;letter-spacing:2px;}
+.testi-text{
+  color:rgba(255,255,255,0.85);font-size:0.95rem;
+  line-height:1.8;margin-bottom:24px;
+  font-style:italic;
+}
+.testi-author{display:flex;align-items:center;gap:14px;}
+.testi-avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--green-bright),var(--orange-sun));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:800;font-size:1rem;flex-shrink:0;
+}
+.testi-name{font-weight:700;color:#fff;font-size:0.9rem;}
+.testi-trip{color:rgba(255,255,255,0.5);font-size:0.8rem;}
+
+/* ============================
+   BOOKING FORM
+   ============================ */
+.booking-section{
+  background:linear-gradient(135deg,var(--green-deep) 0%,var(--blue-mtn) 100%);
+  position:relative;overflow:hidden;
+}
+.booking-section::before{
+  content:'';position:absolute;
+  width:600px;height:600px;border-radius:50%;
+  background:rgba(64,145,108,0.15);
+  top:-200px;right:-200px;
+}
+.booking-section::after{
+  content:'';position:absolute;
+  width:400px;height:400px;border-radius:50%;
+  background:rgba(231,111,81,0.1);
+  bottom:-100px;left:-100px;
+}
+.booking-wrap{
+  display:grid;grid-template-columns:1fr 1.2fr;gap:80px;
+  align-items:center;position:relative;z-index:1;
+}
+.booking-info .section-title{color:#fff;}
+.booking-info .section-sub{color:rgba(255,255,255,0.7);}
+.booking-info .section-eyebrow{background:rgba(64,145,108,0.35);color:var(--green-light);}
+.contact-items{display:flex;flex-direction:column;gap:16px;margin-top:32px;}
+.contact-item{
+  display:flex;align-items:center;gap:16px;
+  color:rgba(255,255,255,0.85);
+}
+.contact-icon{
+  width:44px;height:44px;border-radius:12px;
+  background:rgba(255,255,255,0.1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;flex-shrink:0;
+}
+.contact-detail{font-size:0.9rem;}
+.contact-detail strong{display:block;color:#fff;font-size:0.8rem;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:2px;}
+.booking-form-box{
+  background:var(--bg-card);
+  border-radius:var(--radius-lg);
+  padding:40px;box-shadow:var(--shadow-lg);
+}
+.form-title{font-size:1.4rem;font-weight:800;margin-bottom:8px;color:var(--text-primary);}
+.form-sub{font-size:0.88rem;color:var(--text-muted);margin-bottom:28px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
+.form-label{font-size:0.8rem;font-weight:700;color:var(--text-secondary);letter-spacing:0.04em;text-transform:uppercase;}
+.form-input{
+  padding:13px 16px;
+  border:1.5px solid var(--border);
+  border-radius:var(--radius-sm);
+  background:var(--bg);
+  color:var(--text-primary);
+  font-family:'Manrope',sans-serif;font-size:0.92rem;
+  transition:all var(--transition);
+  outline:none;
+}
+.form-input:focus{border-color:var(--green-bright);background:var(--bg-card);}
+.form-input::placeholder{color:var(--text-muted);}
+.btn-submit{
+  width:100%;padding:16px;
+  background:linear-gradient(135deg,var(--green-mid),var(--green-deep));
+  color:#fff;font-weight:800;font-size:1rem;
+  border-radius:50px;
+  transition:all var(--transition);
+  box-shadow:0 8px 24px rgba(45,106,79,0.4);
+}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(45,106,79,0.5);}
+#form-success{
+  display:none;text-align:center;padding:32px;
+}
+#form-success .success-icon{font-size:3rem;margin-bottom:12px;}
+#form-success h3{color:var(--green-mid);font-size:1.2rem;margin-bottom:8px;}
+#form-success p{color:var(--text-muted);font-size:0.9rem;}
+.contact-btns{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;}
+.btn-cta-call{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 20px;border-radius:50px;
+  font-weight:700;font-size:0.9rem;
+  background:var(--orange-sun);color:#fff;
+  transition:all var(--transition);
+}
+.btn-cta-call:hover{background:#d4582f;transform:translateY(-2px);}
+.btn-cta-wa{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 20px;border-radius:50px;
+  font-weight:700;font-size:0.9rem;
+  background:#25D366;color:#fff;
+  transition:all var(--transition);
+}
+.btn-cta-wa:hover{background:#1aab55;transform:translateY(-2px);}
+
+/* ============================
+   FOOTER
+   ============================ */
+.footer{
+  background:var(--charcoal);
+  padding:72px 0 0;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;
+  margin-bottom:56px;
+}
+.footer-brand-name{
+  font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;
+  color:#fff;margin-bottom:16px;
+}
+.footer-brand-name span{color:var(--orange-sun);}
+.footer-tagline{color:rgba(255,255,255,0.5);font-size:0.9rem;margin-bottom:24px;line-height:1.7;}
+.footer-socials{display:flex;gap:12px;}
+.social-btn{
+  width:40px;height:40px;border-radius:10px;
+  background:rgba(255,255,255,0.08);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,0.7);font-size:1.1rem;
+  transition:all var(--transition);text-decoration:none;
+}
+.social-btn:hover{background:var(--green-mid);color:#fff;}
+.footer-col-title{color:#fff;font-weight:700;font-size:0.9rem;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:20px;}
+.footer-links{display:flex;flex-direction:column;gap:10px;}
+.footer-links a{color:rgba(255,255,255,0.55);font-size:0.88rem;transition:all var(--transition);}
+.footer-links a:hover{color:var(--green-light);padding-left:4px;}
+.footer-contact-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;}
+.footer-contact-icon{color:var(--green-light);font-size:1.1rem;flex-shrink:0;margin-top:2px;}
+.footer-contact-text{color:rgba(255,255,255,0.6);font-size:0.88rem;line-height:1.6;}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding:24px 0;text-align:center;
+  color:rgba(255,255,255,0.35);font-size:0.82rem;
+}
+
+/* ============================
+   FLOATING ELEMENTS
+   ============================ */
+.whatsapp-fab{
+  position:fixed;bottom:28px;right:28px;z-index:500;
+  width:56px;height:56px;border-radius:50%;
+  background:#25D366;color:#fff;font-size:1.6rem;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,0.45);
+  transition:all var(--transition);
+  text-decoration:none;
+}
+.whatsapp-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,0.55);}
+.scroll-top{
+  position:fixed;bottom:96px;right:28px;z-index:500;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--green-mid);color:#fff;font-size:1.2rem;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-md);
+  opacity:0;visibility:hidden;
+  transition:all var(--transition);cursor:pointer;border:none;
+}
+.scroll-top.visible{opacity:1;visibility:visible;}
+.scroll-top:hover{background:var(--green-deep);transform:translateY(-2px);}
+
+/* ============================
+   REVEAL ANIMATIONS
+   ============================ */
+.reveal{opacity:0;transform:translateY(32px);transition:all 0.7s cubic-bezier(0.4,0,0.2,1);}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:all 0.7s cubic-bezier(0.4,0,0.2,1);}
+.reveal-left.visible{opacity:1;transform:translateX(0);}
+.reveal-right{opacity:0;transform:translateX(32px);transition:all 0.7s cubic-bezier(0.4,0,0.2,1);}
+.reveal-right.visible{opacity:1;transform:translateX(0);}
+.stagger-1{transition-delay:0.1s;}
+.stagger-2{transition-delay:0.2s;}
+.stagger-3{transition-delay:0.3s;}
+.stagger-4{transition-delay:0.4s;}
+.stagger-5{transition-delay:0.5s;}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media(max-width:1024px){
+  .features-grid{grid-template-columns:repeat(2,1fr);}
+  .activities-grid{grid-template-columns:repeat(3,1fr);}  
+  .travelers-grid{grid-template-columns:repeat(2,1fr);}
+  .packages-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:repeat(2,1fr);}
+  .gallery-grid{grid-template-columns:repeat(3,1fr);}
+  .gallery-item:nth-child(1){grid-column:span 1;grid-row:span 1;}
+  .gallery-item:nth-child(5){grid-column:span 1;}
+}
+@media(max-width:768px){
+  .nav-menu,.btn-call{display:none;}
+  .hamburger{display:flex;}
+  .section{padding:64px 0;}
+  .about-grid,.hidden-grid,.booking-wrap{grid-template-columns:1fr;}
+  .about-img-float,.about-stat-badge{display:none;}
+  .features-grid{grid-template-columns:1fr;}
+  .activities-grid{grid-template-columns:repeat(2,1fr);}
+  .travelers-grid{grid-template-columns:repeat(2,1fr);}
+  .packages-grid{grid-template-columns:1fr;}
+  .testimonials-track{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .hero h1{font-size:2.4rem;}
+  .booking-form-box{padding:28px 20px;}
+}
+@media(max-width:480px){
+  .activities-grid{grid-template-columns:repeat(2,1fr);}
+  .travelers-grid{grid-template-columns:1fr 1fr;}
+  .hero-btns{flex-direction:column;}
+  .hero-btns .btn-primary,.hero-btns .btn-outline{text-align:center;justify-content:center;}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">Yatharth<span>&</span>Travels</div>
+  <div class="loader-track"><div class="loader-bar"></div></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="mainNav">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo">Yatharth<span>&</span>Travels</a>
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About Maraog</a></li>
+      <li><a href="#activities" class="nav-link">Activities</a></li>
+      <li><a href="#packages" class="nav-link">Packages</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+918894470900" class="btn-call">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        +91 88944 70900
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#about" class="nav-link">About Maraog</a>
+  <a href="#activities" class="nav-link">Activities</a>
+  <a href="#packages" class="nav-link">Packages</a>
+  <a href="#gallery" class="nav-link">Gallery</a>
+  <a href="#contact" class="nav-link">Contact</a>
+  <div class="mobile-nav-actions">
+    <a href="tel:+918894470900" class="btn-primary" style="justify-content:center;">📞 Call Now</a>
+    <a href="https://wa.me/918894470900" class="btn-cta-wa" style="text-decoration:none;">💬 WhatsApp</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-particles"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">🏔️ Local Experts · Hidden Himalayan Gems</div>
+      <h1>Discover Hidden Himachal Through <em>Yatharth Tour & Travels</em></h1>
+      <p class="hero-sub">Explore Maraog, Churdhar, hidden Himalayan villages, ancient temples, trekking routes, camping destinations, and authentic mountain culture with local experts.</p>
+      <div class="hero-btns">
+        <a href="#packages" class="btn-primary">Explore Tours →</a>
+        <a href="#contact" class="btn-outline">Plan My Trip</a>
+      </div>
+      <div class="hero-trust">
+        <span class="trust-pill"><svg viewBox="0 0 24 24"><path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5"/></svg>100% Local Experience</span>
+        <span class="trust-pill"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Custom Tour Planning</span>
+        <span class="trust-pill"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Family Friendly</span>
+        <span class="trust-pill"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Safe Travel</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-dot"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT MARAOG -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-block reveal-left">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&q=80" alt="Maraog Village Himachal Pradesh" loading="lazy">
+        </div>
+        <div class="about-img-float">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&auto=format&q=80" alt="Apple orchards Maraog" loading="lazy">
+        </div>
+        <div class="about-stat-badge">
+          <strong>100%</strong>
+          <span>Offbeat</span>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-eyebrow">About Maraog</span>
+        <h2 class="section-title">A Hidden Himalayan Gem Awaiting You</h2>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:28px;">Maraog Village, located in Chaupal, Shimla, Himachal Pradesh, is one of the most beautiful hidden destinations in the Himalayas. Surrounded by dense deodar forests, apple orchards, breathtaking mountain landscapes, and traditional Himachali culture — Maraog offers an authentic and peaceful experience far away from crowded tourist spots.</p>
+        <div class="about-points">
+          <div class="about-point">
+            <div class="point-icon">🍎</div>
+            <div>
+              <strong style="display:block;margin-bottom:4px;font-size:0.95rem;">Rich Apple-Growing Heritage</strong>
+              <span style="font-size:0.85rem;color:var(--text-muted);">Explore scenic orchards and discover local farming traditions deeply rooted in Himachali culture.</span>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="point-icon">🌲</div>
+            <div>
+              <strong style="display:block;margin-bottom:4px;font-size:0.95rem;">Dense Deodar Forests & Valleys</strong>
+              <span style="font-size:0.85rem;color:var(--text-muted);">Walk through untouched forests, breathe pure mountain air, and discover hidden viewpoints.</span>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="point-icon">🏛️</div>
+            <div>
+              <strong style="display:block;margin-bottom:4px;font-size:0.95rem;">Cultural & Spiritual Significance</strong>
+              <span style="font-size:0.85rem;color:var(--text-muted);">Ancient Shiv temples, traditional Himachali architecture, and living village customs await.</span>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="point-icon">📸</div>
+            <div>
+              <strong style="display:block;margin-bottom:4px;font-size:0.95rem;">Photographer's Paradise</strong>
+              <span style="font-size:0.85rem;color:var(--text-muted);">Breathtaking vistas, forest trails, village life — every frame tells a Himalayan story.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY VISIT -->
+<section class="section" style="background:var(--bg-card);" id="whyvisit">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Why Visit Maraog</span>
+      <h2 class="section-title">Experiences That Stay With You Forever</h2>
+      <p class="section-sub">Each destination around Maraog holds a world of its own — from sacred treks to silent forests.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal stagger-1">
+        <div class="fc-icon">⛰️</div>
+        <div class="fc-title">Churdhar Trek</div>
+        <div class="fc-desc">One of Himachal Pradesh's most iconic trekking destinations offering panoramic Himalayan views and deep spiritual significance at 3647m altitude.</div>
+      </div>
+      <div class="feature-card reveal stagger-2">
+        <div class="fc-icon">🛕</div>
+        <div class="fc-title">Shiv Temples</div>
+        <div class="fc-desc">Explore sacred temples deeply connected with local traditions and mountain spirituality — places where time seems to stand still.</div>
+      </div>
+      <div class="feature-card reveal stagger-3">
+        <div class="fc-icon">🌿</div>
+        <div class="fc-title">Hidden Forest Trails</div>
+        <div class="fc-desc">Walk through untouched deodar forests filled with natural beauty, birdlife, and peaceful surroundings that refresh the soul.</div>
+      </div>
+      <div class="feature-card reveal stagger-1">
+        <div class="fc-icon">🍎</div>
+        <div class="fc-title">Apple Orchard Experience</div>
+        <div class="fc-desc">Discover local apple farming traditions, witness seasonal harvests, and explore the scenic orchard landscapes unique to this region.</div>
+      </div>
+      <div class="feature-card reveal stagger-2">
+        <div class="fc-icon">🏘️</div>
+        <div class="fc-title">Village Culture Tours</div>
+        <div class="fc-desc">Experience authentic Himachali food, living traditions, wooden architecture, and warm hospitality straight from the mountains.</div>
+      </div>
+      <div class="feature-card reveal stagger-3">
+        <div class="fc-icon">📷</div>
+        <div class="fc-title">Photography Locations</div>
+        <div class="fc-desc">Capture breathtaking mountain views, ancient temples, forest valleys, village life, and hidden gems that few cameras have ever seen.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="section activities-section" id="activities">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Adventure Awaits</span>
+      <h2 class="section-title">What You Can Do Here</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.65);">From sunrise treks to bonfire nights — every moment is an adventure.</p>
+    </div>
+    <div class="activities-grid">
+      <div class="activity-card reveal stagger-1">
+        <span class="ac-icon">🥾</span>
+        <div class="ac-name">Trekking</div>
+      </div>
+      <div class="activity-card reveal stagger-2">
+        <span class="ac-icon">⛺</span>
+        <div class="ac-name">Camping</div>
+      </div>
+      <div class="activity-card reveal stagger-3">
+        <span class="ac-icon">🌄</span>
+        <div class="ac-name">Hiking</div>
+      </div>
+      <div class="activity-card reveal stagger-4">
+        <span class="ac-icon">🌳</span>
+        <div class="ac-name">Nature Walks</div>
+      </div>
+      <div class="activity-card reveal stagger-5">
+        <span class="ac-icon">🔥</span>
+        <div class="ac-name">Bonfire Nights</div>
+      </div>
+      <div class="activity-card reveal stagger-1">
+        <span class="ac-icon">🌲</span>
+        <div class="ac-name">Forest Exploration</div>
+      </div>
+      <div class="activity-card reveal stagger-2">
+        <span class="ac-icon">📸</span>
+        <div class="ac-name">Photography Tours</div>
+      </div>
+      <div class="activity-card reveal stagger-3">
+        <span class="ac-icon">🏔️</span>
+        <div class="ac-name">Mountain Adventures</div>
+      </div>
+      <div class="activity-card reveal stagger-4">
+        <span class="ac-icon">🏘️</span>
+        <div class="ac-name">Village Exploration</div>
+      </div>
+      <div class="activity-card reveal stagger-5">
+        <span class="ac-icon">👥</span>
+        <div class="ac-name">Group Expeditions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIDDEN HIMACHAL -->
+<section class="section" id="hidden">
+  <div class="container">
+    <div class="hidden-grid">
+      <div class="reveal-left">
+        <span class="section-eyebrow">Hidden Himachal</span>
+        <h2 class="section-title">Explore What Maps Don't Show</h2>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:8px;">If you want to explore hidden villages, remote valleys, untouched forests, secret viewpoints, traditional mountain settlements, and unexplored destinations across Himachal Pradesh — Yatharth Tour & Travels is your local guide.</p>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:28px;">We know the paths that aren't on Google Maps. We know the families who'll welcome you with chai and stories. We know the timing of the first snow and the last bloom.</p>
+        <div class="destinations-list">
+          <div class="dest-item"><div class="dest-dot"></div><div><div class="dest-name">Maraog Village</div><div class="dest-desc">Our home base — an apple belt village of rare beauty</div></div></div>
+          <div class="dest-item"><div class="dest-dot"></div><div><div class="dest-name">Chaupal Valley</div><div class="dest-desc">Pristine landscapes, minimal tourism, maximum serenity</div></div></div>
+          <div class="dest-item"><div class="dest-dot"></div><div><div class="dest-name">Churdhar Region</div><div class="dest-desc">Iconic trek to the highest peak in outer Himalayas</div></div></div>
+          <div class="dest-item"><div class="dest-dot"></div><div><div class="dest-name">Hidden Forest Trails</div><div class="dest-desc">Secret deodar paths known only to locals</div></div></div>
+          <div class="dest-item"><div class="dest-dot"></div><div><div class="dest-name">Remote Mountain Villages</div><div class="dest-desc">Traditional Himachali settlements untouched by mass tourism</div></div></div>
+          <div class="dest-item"><div class="dest-dot"></div><div><div class="dest-name">Apple Belt Villages</div><div class="dest-desc">Where orchards meet mountain views — pure Himachal</div></div></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="hidden-map">
+          <div class="map-placeholder">
+            <div class="map-pin">📍</div>
+            <h3>Maraog, Chaupal</h3>
+            <p style="margin-bottom:20px;">Shimla, Himachal Pradesh 171211</p>
+            <a href="https://maps.google.com/?q=Maraog+Chaupal+Shimla+Himachal+Pradesh" target="_blank" rel="noopener" class="btn-primary" style="font-size:0.85rem;padding:12px 24px;">Open in Google Maps →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO CAN TRAVEL -->
+<section class="section" style="background:var(--bg-card);" id="travelers">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Everyone's Welcome</span>
+      <h2 class="section-title">Who Can Travel With Us</h2>
+      <p class="section-sub">Whether you're a solo explorer or a group of 50 — we have a plan that fits perfectly.</p>
+    </div>
+    <div class="travelers-grid">
+      <div class="traveler-card reveal stagger-1">
+        <span class="tc-emoji">👨‍👩‍👧‍👦</span>
+        <div class="tc-name">Families</div>
+        <div class="tc-desc">Safe, comfortable, and memorable trips for every family member — kids to grandparents.</div>
+      </div>
+      <div class="traveler-card reveal stagger-2">
+        <span class="tc-emoji">👫</span>
+        <div class="tc-name">Friends Groups</div>
+        <div class="tc-desc">Epic adventures, shared moments, and stories you'll retell for years.</div>
+      </div>
+      <div class="traveler-card reveal stagger-3">
+        <span class="tc-emoji">💼</span>
+        <div class="tc-name">Corporate Teams</div>
+        <div class="tc-desc">Team-building retreats and corporate outings in a refreshing mountain setting.</div>
+      </div>
+      <div class="traveler-card reveal stagger-4">
+        <span class="tc-emoji">🏔️</span>
+        <div class="tc-name">Adventure Seekers</div>
+        <div class="tc-desc">Push your limits with expert-guided treks, camps, and mountain expeditions.</div>
+      </div>
+      <div class="traveler-card reveal stagger-1">
+        <span class="tc-emoji">📷</span>
+        <div class="tc-name">Photography Groups</div>
+        <div class="tc-desc">Golden hour, misty forests, village life — every shot is a masterpiece waiting to happen.</div>
+      </div>
+      <div class="traveler-card reveal stagger-2">
+        <span class="tc-emoji">🌿</span>
+        <div class="tc-name">Nature Lovers</div>
+        <div class="tc-desc">Forests, flowers, birds, and clean Himalayan air — nature at its most untouched.</div>
+      </div>
+      <div class="traveler-card reveal stagger-3">
+        <span class="tc-emoji">🧘</span>
+        <div class="tc-name">Solo Travelers</div>
+        <div class="tc-desc">Travel safely, discover yourself, and connect with mountain life on your own terms.</div>
+      </div>
+      <div class="traveler-card reveal stagger-4">
+        <span class="tc-emoji">🏫</span>
+        <div class="tc-name">School & College Groups</div>
+        <div class="tc-desc">Educational trips with cultural immersion and safe, guided mountain adventures.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section packages-section" id="packages">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Tour Packages</span>
+      <h2 class="section-title">Choose Your Himalayan Journey</h2>
+      <p class="section-sub">Curated experiences built by people who live and breathe these mountains.</p>
+    </div>
+    <div class="packages-grid">
+
+      <div class="pkg-card reveal stagger-1">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&auto=format&q=80" alt="Family Holiday Himachal" loading="lazy">
+          <div class="pkg-badge">Most Popular</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Family Holiday Package</div>
+          <div class="pkg-meta">
+            <span class="pkg-tag">📅 3–5 Days</span>
+            <span class="pkg-tag">👨‍👩‍👧‍👦 Families</span>
+          </div>
+          <ul class="pkg-highlights">
+            <li>Maraog Village Stay with local family</li>
+            <li>Apple Orchard & Nature Walk</li>
+            <li>Himachali Cultural Experience</li>
+            <li>Chaupal Valley Sightseeing</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-ideal">Ideal for: Families with kids</div>
+            <a href="#contact" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal stagger-2">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&q=80" alt="Friends Adventure Package" loading="lazy">
+          <div class="pkg-badge">Adventure</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Friends Adventure Package</div>
+          <div class="pkg-meta">
+            <span class="pkg-tag">📅 4–6 Days</span>
+            <span class="pkg-tag">👫 Friends</span>
+          </div>
+          <ul class="pkg-highlights">
+            <li>Trekking & Hiking in Hidden Trails</li>
+            <li>Forest Camping with Bonfire</li>
+            <li>Village Exploration & Photography</li>
+            <li>Mountain Adventures & Group Activities</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-ideal">Ideal for: Groups of 4–20</div>
+            <a href="#contact" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal stagger-3">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=600&auto=format&q=80" alt="Churdhar Trek Package" loading="lazy">
+          <div class="pkg-badge">Iconic Trek</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Churdhar Trek Package</div>
+          <div class="pkg-meta">
+            <span class="pkg-tag">📅 3–4 Days</span>
+            <span class="pkg-tag">🥾 Trekkers</span>
+          </div>
+          <ul class="pkg-highlights">
+            <li>Full Churdhar Summit Trek (3647m)</li>
+            <li>Panoramic Himalayan Views</li>
+            <li>Expert Local Trek Guide</li>
+            <li>Camp Under the Stars</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-ideal">Ideal for: Trek enthusiasts</div>
+            <a href="#contact" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal stagger-1">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1496080174650-637e3f22fa03?w=600&auto=format&q=80" alt="Corporate Retreat Himachal" loading="lazy">
+          <div class="pkg-badge">Corporate</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Corporate Retreat Package</div>
+          <div class="pkg-meta">
+            <span class="pkg-tag">📅 2–4 Days</span>
+            <span class="pkg-tag">💼 Teams</span>
+          </div>
+          <ul class="pkg-highlights">
+            <li>Team Building Activities in Nature</li>
+            <li>Conference Space Arrangement</li>
+            <li>Group Treks & Outdoor Sessions</li>
+            <li>Himachali Cuisine & Bonfire Evenings</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-ideal">Ideal for: Corporate teams</div>
+            <a href="#contact" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal stagger-2">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=600&auto=format&q=80" alt="Camping Package Himachal" loading="lazy">
+          <div class="pkg-badge">Nature Stay</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Camping Package</div>
+          <div class="pkg-meta">
+            <span class="pkg-tag">📅 2–3 Days</span>
+            <span class="pkg-tag">⛺ Campers</span>
+          </div>
+          <ul class="pkg-highlights">
+            <li>Forest Camping in Deodar Groves</li>
+            <li>Stargazing & Night Sky Sessions</li>
+            <li>Bonfire & Local Cuisine</li>
+            <li>Morning Nature Walk & Bird Watching</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-ideal">Ideal for: Nature campers</div>
+            <a href="#contact" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal stagger-3">
+        <div class="pkg-img">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&auto=format&q=80" alt="Custom Himachal Exploration" loading="lazy">
+          <div class="pkg-badge">Custom</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-title">Custom Himachal Exploration</div>
+          <div class="pkg-meta">
+            <span class="pkg-tag">📅 Flexible</span>
+            <span class="pkg-tag">✨ Any Group</span>
+          </div>
+          <ul class="pkg-highlights">
+            <li>100% Personalized Itinerary</li>
+            <li>Hidden Destinations of Your Choice</li>
+            <li>Budget & Comfort Flexible</li>
+            <li>Dedicated Local Guide Throughout</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-ideal">Ideal for: Everyone</div>
+            <a href="#contact" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Gallery</span>
+      <h2 class="section-title">Glimpses of Hidden Himachal</h2>
+      <p class="section-sub">Real moments, real places, real magic.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&q=80" alt="Himalayan landscape" loading="lazy">
+        <div class="gallery-overlay"><span class="gallery-label">Himalayan Peaks</span></div>
+      </div>
+      <div class="gallery-item reveal stagger-1">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&q=80" alt="Mountain village" loading="lazy">
+        <div class="gallery-overlay"><span class="gallery-label">Village Life</span></div>
+      </div>
+      <div class="gallery-item reveal stagger-2">
+        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&auto=format&q=80" alt="Forest trail" loading="lazy">
+        <div class="gallery-overlay"><span class="gallery-label">Forest Trails</span></div>
+      </div>
+      <div class="gallery-item reveal stagger-3">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&q=80" alt="Trekking Himachal" loading="lazy">
+        <div class="gallery-overlay"><span class="gallery-label">Churdhar Trek</span></div>
+      </div>
+      <div class="gallery-item reveal stagger-1">
+        <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&auto=format&q=80" alt="Camping night" loading="lazy">
+        <div class="gallery-overlay"><span class="gallery-label">Starlit Camps</span></div>
+      </div>
+      <div class="gallery-item reveal stagger-2">
+        <img src="https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=600&auto=format&q=80" alt="Apple orchards" loading="lazy">
+        <div class="gallery-overlay"><span class="gallery-label">Apple Orchards</span></div>
+      </div>
+      <div class="gallery-item reveal stagger-3">
+        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&auto=format&q=80" alt="Sunset mountains" loading="lazy">
+        <div class="gallery-overlay"><span class="gallery-label">Mountain Sunsets</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Traveler Stories</span>
+      <h2 class="section-title">What Our Guests Say</h2>
+    </div>
+    <div class="testimonials-track">
+      <div class="testi-card reveal stagger-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Yatharth took us to Maraog and it completely changed my idea of Himachal tourism. The apple orchards, the village homestay, the evening bonfire — none of this you'll find in any travel brochure. Pure magic."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Rahul Sharma</div>
+            <div class="testi-trip">Family Trip · Maraog Village</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal stagger-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The Churdhar trek was the highlight of our year. Our guide knew every stone on that mountain. From basecamp to summit — breathtaking views, amazing company, and a spiritual experience I'll never forget."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div>
+            <div class="testi-name">Priya Mehta</div>
+            <div class="testi-trip">Churdhar Trek · Friends Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal stagger-3">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"We organized our company offsite with Yatharth. 30 people, 3 days in the Himalayas — forest walks, bonfire evenings, team challenges. Everyone came back more connected. Highly recommended for corporate teams."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Aditya Verma</div>
+            <div class="testi-trip">Corporate Retreat · 30 Members</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING / CONTACT -->
+<section class="section booking-section" id="contact">
+  <div class="container">
+    <div class="booking-wrap">
+      <div class="booking-info">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">Ready To Explore Hidden Himachal?</h2>
+        <p class="section-sub">Whether you're planning a family vacation, friends adventure trip, corporate outing, trekking expedition, or hidden Himachal exploration — we'll craft the perfect experience.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-detail">
+              <strong>Call Us</strong>
+              <a href="tel:+918894470900" style="color:rgba(255,255,255,0.85);">+91 88944 70900</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-detail">
+              <strong>Email</strong>
+              <a href="mailto:info@yatharthtourtravels.com" style="color:rgba(255,255,255,0.85);">info@yatharthtourtravels.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-detail">
+              <strong>Location</strong>
+              <span>Maraog, Chaupal, Shimla, HP 171211</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-btns">
+          <a href="tel:+918894470900" class="btn-cta-call">📞 Call Now</a>
+          <a href="https://wa.me/918894470900?text=Hello%20Yatharth%20Tour%20%26%20Travels%2C%20I%27m%20interested%20in%20exploring%20Hidden%20Himachal!" target="_blank" rel="noopener" class="btn-cta-wa">💬 WhatsApp Now</a>
+        </div>
+      </div>
+      <div class="booking-form-box reveal-right">
+        <div id="form-success">
+          <div class="success-icon">✅</div>
+          <h3>Inquiry Sent!</h3>
+          <p>Thank you! Our team will call you within 24 hours to plan your perfect Himalayan journey.</p>
+        </div>
+        <form id="bookingForm">
+          <div class="form-title">Plan My Trip</div>
+          <div class="form-sub">Fill in the details — we'll take care of the rest.</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-input" id="fname" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-input" id="fphone" placeholder="+91 00000 00000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Travel Date</label>
+              <input type="date" class="form-input" id="fdate">
+            </div>
+            <div class="form-group">
+              <label class="form-label">No. of Travelers</label>
+              <input type="number" class="form-input" id="ftravelers" placeholder="e.g. 4" min="1">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tour Type</label>
+            <select class="form-input" id="ftour">
+              <option value="">Select a tour type...</option>
+              <option>Family Holiday Package</option>
+              <option>Friends Adventure Package</option>
+              <option>Churdhar Trek Package</option>
+              <option>Corporate Retreat Package</option>
+              <option>Camping Package</option>
+              <option>Custom Himachal Exploration</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-input" id="fmessage" rows="3" placeholder="Tell us about your dream trip..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Inquiry →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Yatharth<span>&</span>Travels</div>
+        <p class="footer-tagline">Explore Hidden Himachal Like Never Before. Local experts, authentic experiences, unforgettable memories from the heart of the Himalayas.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook">f</a>
+          <a href="#" class="social-btn" aria-label="Instagram">ig</a>
+          <a href="https://wa.me/918894470900" class="social-btn" aria-label="WhatsApp" target="_blank">wa</a>
+          <a href="#" class="social-btn" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Maraog</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Popular Tours</div>
+        <ul class="footer-links">
+          <li><a href="#packages">Family Holiday Package</a></li>
+          <li><a href="#packages">Churdhar Trek</a></li>
+          <li><a href="#packages">Camping Package</a></li>
+          <li><a href="#packages">Friends Adventure</a></li>
+          <li><a href="#packages">Corporate Retreat</a></li>
+          <li><a href="#packages">Custom Tour</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon">📞</span>
+          <div class="footer-contact-text"><a href="tel:+918894470900" style="color:rgba(255,255,255,0.6);">+91 88944 70900</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon">📧</span>
+          <div class="footer-contact-text"><a href="mailto:info@yatharthtourtravels.com" style="color:rgba(255,255,255,0.6);">info@yatharthtourtravels.com</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon">📍</span>
+          <div class="footer-contact-text">Maraog, Chaupal, Shimla,<br>Himachal Pradesh 171211</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2026 Yatharth Tour & Travels | All Rights Reserved · Maraog, Chaupal, Shimla, HP</div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a href="https://wa.me/918894470900?text=Hello%20Yatharth%20Tour%20%26%20Travels%2C%20I%27m%20interested%20in%20a%20Himachal%20trip!" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script>
+// ============================
+// LOADER
+// ============================
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 1900);
+});
+
+// ============================
+// THEME TOGGLE
+// ============================
+const html = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('ytt-theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+themeToggle.addEventListener('click', () => {
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('ytt-theme', next);
+  themeToggle.textContent = next === 'dark' ? '☀️' : '🌙';
+});
+
+// ============================
+// NAVIGATION
+// ============================
+const mainNav = document.getElementById('mainNav');
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const mobileNavClose = document.getElementById('mobileNavClose');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 30) mainNav.classList.add('scrolled');
+  else mainNav.classList.remove('scrolled');
+});
+
+hamburger.addEventListener('click', () => { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+mobileNavClose.addEventListener('click', closeMobileNav);
+function closeMobileNav() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+
+// Close mobile nav on link click
+mobileNav.querySelectorAll('a').forEach(link => { link.addEventListener('click', closeMobileNav); });
+
+// Active nav link on scroll
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section[id]');
+
+const updateActiveLink = () => {
+  let current = '';
+  sections.forEach(section => {
+    if (window.scrollY >= section.offsetTop - 120) current = section.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+};
+window.addEventListener('scroll', updateActiveLink, { passive: true });
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', (e) => {
+    const href = anchor.getAttribute('href');
+    if (href === '#') return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// ============================
+// SCROLL TO TOP
+// ============================
+const scrollTopBtn = document.getElementById('scrollTop');
+window.addEventListener('scroll', () => {
+  scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// ============================
+// SCROLL REVEAL
+// ============================
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+revealEls.forEach(el => revealObserver.observe(el));
+
+// ============================
+// BOOKING FORM
+// ============================
+const bookingForm = document.getElementById('bookingForm');
+const formSuccess = document.getElementById('form-success');
+
+bookingForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  
+  if (!name || !phone) {
+    alert('Please enter your name and phone number.');
+    return;
+  }
+  if (phone.replace(/\D/g, '').length < 10) {
+    alert('Please enter a valid phone number.');
+    return;
+  }
+
+  // WhatsApp message with form data
+  const date = document.getElementById('fdate').value;
+  const travelers = document.getElementById('ftravelers').value;
+  const tour = document.getElementById('ftour').value;
+  const message = document.getElementById('fmessage').value;
+  
+  const waText = encodeURIComponent(
+    `Hello Yatharth Tour & Travels!\n\nName: ${name}\nPhone: ${phone}${date ? '\nTravel Date: ' + date : ''}${travelers ? '\nTravelers: ' + travelers : ''}${tour ? '\nTour: ' + tour : ''}${message ? '\nMessage: ' + message : ''}\n\nI would like to plan a trip to Hidden Himachal!`
+  );
+
+  bookingForm.style.display = 'none';
+  formSuccess.style.display = 'block';
+  
+  // Open WhatsApp after short delay
+  setTimeout(() => {
+    window.open(`https://wa.me/918894470900?text=${waText}`, '_blank');
+  }, 800);
+});
+
+// ============================
+// LAZY LOAD IMAGES
+// ============================
+const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+if ('IntersectionObserver' in window) {
+  const imgObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src || img.src;
+        imgObserver.unobserve(img);
+      }
+    });
+  });
+  lazyImages.forEach(img => imgObserver.observe(img));
+}
+
+console.log('🏔️ Yatharth Tour & Travels | Explore Hidden Himachal | +91 88944 70900');
+</script>
+</body>
+</html>
